@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirección del eje principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <div class="contenido">
+        
+
+
+
+        <div class="card">
+            <h2 class="titulo">ESTABLECER LA DIRECCIÓN DEL EJE PRINCIPAL DEL CONTENEDOR FLEXIBLE</h2>
+            <p>La propiedad <span class="titulo">flex-direction</span>  permite establecer la dirección del eje principal del 
+                contenedor flexible. Los elementos flexibles se colocan a en la dirección del eje principal.</p>
+            <h3>EJE PRINCIPAL DE IZQUIERDA A DERECHA</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    &lt;div&gt;E3&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    <strong class="titulo">flex-direction: row;</strong> [VALOR  POR DEFECTO] 
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/direction-row.png" alt="IMG" class="img-center">    
+                </div>
+            </div>
+            
+
+            <!-- <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-1"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 5&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 6&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-1{
+    display: flex;
+    flex-direction: row;
+}
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="contenedor-flexible-1">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>        
+            </div> -->
+
+        </div>
+        <div class="card">
+            <h3>EJE PRINCIPAL DE DERECHA A IZQUIERDA
+            </h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    &lt;div&gt;E3&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    <strong class="titulo">flex-direction: row-reverse;</strong> 
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/direction-row-reverse.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+
+            <!-- <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-2"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 5&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 6&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="contenedor-flexible-2">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>        
+            </div> -->
+
+            
+        </div>
+        <div class="card">
+            <h3>EJE PRINCIPAL DE ARRIBA A ABAJO</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    <strong class="titulo">flex-direction: column;</strong> 
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/direction-column.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+
+            <!-- <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-3"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-3{
+    display: flex;
+    flex-direction: column;
+}
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="contenedor-flexible-3">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>                    
+            </div> -->
+
+            
+        </div>
+        <div class="card">
+            <h3>EJE PRINCIPAL DE ABAJO A ARRIBA</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    <strong class="titulo">flex-direction: column-reverse;</strong> 
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/direction-column-reverse.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+            
+
+            <!-- <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-4"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-4{
+    display: flex;
+    flex-direction: column;
+}
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="contenedor-flexible-4">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                        
+            </div> -->
+
+        </div>
+
+
+    </div>
+</body>
+</html>
